@@ -1,11 +1,9 @@
 ---
 layout: contact
-title: Contact
+title: Contact Page
 permalink: /contact
 section: contact
 intro_paragraph: |-
-
- This is a Contact Page
 ---
+**Send me a message**
 
-**Send us a message**

@@ -3,8 +3,6 @@ layout: default
 ---
 {% assign author = site.data.author[page.author] %}
 
-<h2>{{ page.title }}</h2>
-
 <time datetime="{{ page.date }}">
   <small>
     <strong>{{ page.date | date_to_string }}</strong>
@@ -13,8 +11,6 @@ layout: default
     {% endif %}
   </small>
 </time>
-
-{% include page-intro.html %}
 
 {{ content }}
 

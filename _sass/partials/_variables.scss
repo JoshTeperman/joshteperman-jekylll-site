@@ -12,12 +12,14 @@ $white: #FFFFFF;
 
 
 // typographic defaults
-$base-font: 'Gelasio', serif, sans-serif;
+$base-font: 'Hind Madurai', sans-serif;
+$header-font: 'Gelasio', serif, sans-serif;
+$highlight-font: 'Overlock', cursive;
 $original-font: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue;
 $code-font: Courier, monospace;
 $base-font-size: 62.5%;
-$base-font-weight: 300;
-$bold-font-weight: 600;
+$base-font-weight: 400;
+$bold-font-weight: 700;
 $base-line-height: 1.5;
 
 // viewport breakpoints

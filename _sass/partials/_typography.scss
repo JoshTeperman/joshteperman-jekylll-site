@@ -37,8 +37,9 @@ h1,h2,h3,h4,h5,h6,figure {
 }
 
 
-p.intro {
+.intro {
   font-size: 2.4rem;
+  font-style: italic;
   color: lighten($text-color-primary, 40%);
   padding-bottom: 4rem;
   @media screen and (min-width: $screen-sm-min) {
@@ -47,6 +48,7 @@ p.intro {
 }
 
 h1,h2,h3,h4,h5,h6 {
+  font-family: $header-font;
   font-weight: $bold-font-weight;
   line-height: $base-line-height / 1.3;
 }
@@ -56,8 +58,11 @@ h1 {
 }
 
 h2 {
+  font-size: 6rem;
+}
+
+h3 {
   font-size: 3.2rem;
-  padding-bottom: 4rem;
 }
 
 h3 {
