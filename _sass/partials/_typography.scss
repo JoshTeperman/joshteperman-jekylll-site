@@ -16,7 +16,7 @@ html {
 // the root breakpoints above will then scale all elements together
 
 body {
-  color: $text-color;
+  color: $text-color-primary;
   font-family: $base-font;
   line-height: $base-line-height;
   font-weight: $base-font-weight;
@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6,figure {
 
 p.intro {
   font-size: 2.4rem;
-  color: lighten($text-color, 40%);
+  color: lighten($text-color-primary, 40%);
   padding-bottom: 4rem;
   @media screen and (min-width: $screen-sm-min) {
     padding-bottom: 4rem;
@@ -63,7 +63,7 @@ h3 {
 code {
   font-family: $code-font;
   font-size: 1.2rem;
-  color: $text-color;
+  color: $text-color-primary;
 }
 
 strong {

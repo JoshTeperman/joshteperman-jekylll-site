@@ -27,7 +27,7 @@ body > * {
 header {
   grid-column: full;
   display: grid;
-  background-color: $brand-color;
+  background-color: $white;
   padding: 2rem;
   @media screen and (min-width: $screen-sm-min) {
     grid-template-columns: 1fr auto;
@@ -53,13 +53,13 @@ header h1 {
   a:visited {
     text-decoration: none;
     border: 0;
-    color: white;
+    color: $text-color-primary;
     @media screen and (min-width: $screen-sm-min) {
       padding: 1rem;
     }
   }
   a:hover {
-    color: white;
+    color: $text-color-secondary;
   }
 }
 
@@ -68,7 +68,6 @@ header ul {
 }
 
 header li {
-  color: white;
   margin-right: 8px;
 }
 
@@ -88,7 +87,7 @@ header > nav {
       }
       a,
       a:visited {
-        color: white;
+        color: $text-color-primary;
         text-decoration: none;
         border: 0;
         @media screen and (min-width: $screen-sm-min) {
@@ -99,7 +98,7 @@ header > nav {
         }
       }
       a:hover {
-        color: white;
+        color: $text-color-secondary;
       }
     }
   }
@@ -191,8 +190,9 @@ footer {
     [full-start] minmax(1rem, 1fr)
     [main-start] minmax(0, 50rem) [main-end]
     minmax(1rem, 1fr) [full-end];
-  background-color: $grey-bg-color;
+  background-color: $white;
   > small {
     grid-column: main;
   }
+  border-top: 0.05em solid $hairline-color;
 }

@@ -82,7 +82,7 @@ input,
 textarea {
 	border: 0.05em solid $hairline-color;
 	&:focus {
-		border: 0.05em solid $text-color;
+		border: 0.05em solid $text-color-primary;
 	}
 }
 
