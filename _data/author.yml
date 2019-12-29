@@ -1,0 +1,6 @@
+# you can add .yml files for any other global data in this folder
+
+josh_teperman:
+    name: josh teperman
+    email: joshteperman@gmail.com
+    web: www.josht.dev

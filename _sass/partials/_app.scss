@@ -35,10 +35,17 @@ header {
   }
 }
 
+header .links {
+  display: flex;
+  & > * {
+    margin-right: 20px;
+  }
+}
+
 // logo, is a grid item
-header > h1 {
+header h1 {
   display: inline-block;
-  padding-bottom: 1rem;
+  line-height: inherit;
   @media screen and (min-width: $screen-sm-min) {
     padding-bottom: 0;
   }
@@ -54,6 +61,15 @@ header > h1 {
   a:hover {
     color: white;
   }
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  color: white;
+  margin-right: 8px;
 }
 
 // main menu, is a grid item
