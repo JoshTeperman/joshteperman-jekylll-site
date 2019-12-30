@@ -1,17 +1,11 @@
 <header>
-  <div class="links">
-    <h4>
-      <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    </h4>
-    <ul>
-      <li><a href="www.twitter/joshteperman"></a>TW</li>
-      <li><a href="www.github.com/joshteperman"></a>GH</li>
-    </ul>
-  </div>
+  <h4 class="header-title">
+    <a href="{{ "/" | relative_url }}">{{ site.title | upcase }}</a>
+  </h4>
+  <ul class="social-links">
+    <li class="social-link"><a href="www.twitter/joshteperman"></a>TW</li>
+    <li class="social-link"><a href="www.github.com/joshteperman"></a>GH</li>
+  </ul>
 
-
-  <nav>
-    {% include navigation.html navigation=site.data.navigation %}
-  </nav>
-
+  {% include navigation.html navigation=site.data.navigation %}
 </header>
