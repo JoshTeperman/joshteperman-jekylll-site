@@ -24,11 +24,6 @@ body > * {
 	border: 0;
 }
 
-
-
-
-
-
 // our main content wrapper, the width scales with font size
 main {
   width: 100%;
@@ -80,23 +75,6 @@ nav[aria-label="Adjacent Posts"] {
   }
 }
 
-// contact form
-html[data-current="contact"] main > form {
-  display: grid;
-  label {
-    display: none;
-  }
-  input,
-  textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
-  button {
-    width: 100%;
-    max-width: 200px;
-  }
-}
 
 // reset CSS Grid fallbacks when they aren't required
 @supports (display: grid) {
@@ -108,20 +86,3 @@ html[data-current="contact"] main > form {
     }
   }
 }
-
-footer {
-  grid-column: full;
-  display: grid;
-  grid-template-columns:
-    [full-start] minmax(1rem, 1fr)
-    [main-start] minmax(0, 50rem) [main-end]
-    minmax(1rem, 1fr) [full-end];
-  background-color: $white;
-  > small {
-    grid-column: main;
-  }
-  border-top: 0.05em solid $hairline-color;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-

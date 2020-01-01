@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Josh Teperman
+title:
 permalink: /
 section: home
 intro_paragraph: |

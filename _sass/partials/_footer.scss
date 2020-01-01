@@ -1,0 +1,16 @@
+footer {
+  grid-column: full;
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1rem, 1fr)
+    [main-start] minmax(0, 50rem) [main-end]
+    minmax(1rem, 1fr) [full-end];
+  background-color: $white;
+  > small {
+    grid-column: main;
+  }
+  border-top: 0.05em solid $hairline-color;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
