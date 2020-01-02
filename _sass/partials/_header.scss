@@ -13,6 +13,10 @@ header {
     }
   }
 
+  .highlighted {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFE44B 50%);
+  }
+
   a,
   .nav-link,
   .nav-link:visited,
@@ -24,7 +28,7 @@ header {
     padding-bottom: 0;
 
     &[data-current="current page"] {
-      border-bottom: 1px solid $text-color-secondary;
+      background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFE44B 50%);
     }
   }
 
