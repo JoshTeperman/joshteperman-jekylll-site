@@ -64,25 +64,25 @@ img {
 }
 
 pre {
-	background-color: $grey-bg-color;
+	background-color: $light-light-gray;
 	border-radius: 0.3rem;
 	padding: 1rem;
 }
 
 code {
-	background-color: $grey-bg-color;
+	background-color: $light-light-gray;
   padding: 0.2rem 0.4rem;
 }
 
 ::selection {
-  background-color: $selection-bg-color;
+  background-color: $yellow;
 }
 
 input,
 textarea {
-	border: 0.05em solid $hairline-color;
+	border: 0.05em solid $light-gray;
 	&:focus {
-		border: 0.05em solid $text-color-primary;
+		border: 0.05em solid $black;
 	}
 }
 
@@ -93,5 +93,5 @@ textarea {
 }
 
 button {
-	@include button($link-color, $text-color-negative);
+	@include button($blue, $white);
 }

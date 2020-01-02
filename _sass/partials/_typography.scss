@@ -16,7 +16,7 @@ html {
 // the root breakpoints above will then scale all elements together
 
 body {
-  color: $text-color-primary;
+  color: $black;
   font-family: $base-font;
   line-height: $base-line-height;
   font-weight: $base-font-weight;
@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6,figure {
   font-size: 2.4rem;
   font-style: italic;
   font-family: $cursive-font;
-  color: lighten($text-color-primary, 40%);
+  color: lighten($black, 40%);
   padding-bottom: 4rem;
   @media screen and (min-width: $screen-sm-min) {
     padding-bottom: 4rem;
@@ -73,7 +73,7 @@ h3 {
 code {
   font-family: $code-font;
   font-size: 1.2rem;
-  color: $text-color-primary;
+  color: $black;
 }
 
 strong {
@@ -86,17 +86,17 @@ small {
 
 a,
 a:visited {
-  border-bottom: 0.1em solid $link-color;
+  border-bottom: 0.1em solid $blue;
 	text-decoration: none;
-  color: $link-color;
-  color: $text-color-primary;
+  color: $blue;
+  color: $black;
 }
 
 a:hover,
 a:active {
   text-decoration: none;
   border: 0;
-  color: $link-hover-color;
+  color: $blue;
 }
 
 header h1 {

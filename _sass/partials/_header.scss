@@ -23,7 +23,7 @@ header {
   .header-title {
     font-family: $base-font;
     border: 0;
-    color: $text-color-primary;
+    color: $black;
     text-decoration: none;
     padding-bottom: 0;
 
@@ -33,7 +33,7 @@ header {
   }
 
   a:hover {
-    color: $text-color-secondary;
+    color: $dark-gray;
   }
 
   @media screen and (min-width: $screen-sm-min) {
