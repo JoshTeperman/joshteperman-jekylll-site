@@ -2,7 +2,7 @@
 <ul class="nav-links">
   {% for item in include.navigation %}
     <li class="nav-item">
-      <h5 class="nav-link"><a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text | upcase }}</a></h5>
+      <h6 class="nav-link"><a href="{{ item.url }}"{% if item.url == navurl %} class="highlighted" {% endif %}>{{ item.text | upcase }}</a></h6>
       {% if item.subitems %}
         {% include navigation.html navigation=item.subitems %}
       {% endif %}

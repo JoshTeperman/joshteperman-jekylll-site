@@ -1,8 +1,4 @@
-.articles-list {
-
-}
-
-.article-preview {
+li.article-preview {
   margin-bottom: 2rem;
   border-bottom: 0.05em solid $light-gray;
   p {
@@ -16,6 +12,14 @@
 
 .article-title {
   padding-bottom: 0.5rem;
+  a {
+    text-decoration: none;
+    border-bottom: 0.1em solid $blue;
+  }
+  a:hover {
+    color: $blue;
+    border: none;
+  }
 }
 
 .published-date {
