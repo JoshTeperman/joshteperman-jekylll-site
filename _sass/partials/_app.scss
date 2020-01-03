@@ -63,14 +63,3 @@ nav[aria-label="Adjacent Posts"] {
     }
   }
 }
-
-// reset CSS Grid fallbacks when they aren't required
-@supports (display: grid) {
-  html[data-current="contact"] main > form {
-    input,
-    textarea,
-    button {
-      width: auto;
-    }
-  }
-}

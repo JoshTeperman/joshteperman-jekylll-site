@@ -1,10 +1,10 @@
 ---
 layout: default
-title: About
-permalink: /about
-section: about
+title: Best Stuff
+permalink: /beststuff
+section: beststuff
 intro_paragraph: |
-  This is the About Page
+  This is the Best Stuff Page
 ---
 ### Some Heading
 
