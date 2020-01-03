@@ -8,8 +8,12 @@ layout: compress
   <body>
     {% include header.html %}
     <main>
-      {% include page-title.html %}
-      {% include page-intro.html %}
+      {% if page.title %}
+        {% include page-title.html %}
+      {% endif %}
+      {% if page.intro %}
+        {% include page-intro.html %}
+      {% endif %}
       {{ content }}
     </main>
     {% include footer.html %}

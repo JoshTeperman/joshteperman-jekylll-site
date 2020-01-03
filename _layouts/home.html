@@ -2,8 +2,11 @@
 layout: default
 ---
 {{ content }}
-
-<section>
+<section style="margin-bottom: 2rem" class="landing">
+  <h2>About Me</h2>
+  <img src="https://via.placeholder.com/700px*300px"></img>
+</section>
+<section class="page-content">
   <h2>Articles</h2>
   <ul class="articles-list">
     {% for post in site.posts %}
