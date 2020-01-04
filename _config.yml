@@ -44,13 +44,14 @@ compress_html:
 
 # set some common post defaults
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post" # set the correct default template for a post
       section: "post" # set the root section name
+      img: true
+
 
 # Build settings
 markdown: kramdown
