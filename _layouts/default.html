@@ -8,10 +8,10 @@ layout: compress
   <body>
     {% include header.html %}
     <main>
-      {% if page.title %}
+      {% if page.title and page.title != '' %}
         {% include page-title.html %}
       {% endif %}
-      {% if page.intro %}
+      {% if page.intro_paragraph and page.intro_paragraph != '' %}
         {% include page-intro.html %}
       {% endif %}
       {{ content }}
