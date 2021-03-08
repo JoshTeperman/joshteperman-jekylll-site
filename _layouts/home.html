@@ -2,15 +2,21 @@
 layout: default
 ---
 {{ content }}
-<section class="landing" style="margin-bottom: 2rem; font-size: 80%">
-  <div>
-    <p style="padding-bottom: 0.5rem">I'm Josh. I build software, make art, and read lots of sci-fi. I spend way too much time writing down ideas and starting projects and not enough time sharing them with the world, so I built this website to reduce build &rarr; release friction as much as possible.</p>
-    <a href="/now">Learn more about what I'm doing now</a>
-  </div>
+<section class="landing" style="margin-bottom: 4rem">
+  <p>
+    I'm Josh. I build software, make art, and read lots of sci-fi. Welcome to my little corner of the internet 👋
+  </p>
+  <p style="margin-bottom: 0.5rem">
+    If you want to get in touch with me you can find me on <a href="https://www.twitter.com/joshteperman" target="_blank">The Twitter</a> or judge my green squares on <a href="https://www.github.com/joshteperman" target="_blank">The GitHub</a>.
+  </p>
+  <a href="/now">Learn more about me &rarr;</a>
 </section>
 <section class="page-content" style="display: flex">
   <div>
-    <h4>Writing</h4>
+    <h3>Writing</h3>
+    <p>
+      Writing is how I find connections between ideas and clarify my thoughts.</p>
+    </p>
     <ul class="articles-list">
       {% for post in site.posts %}
       {% assign author = site.data.author[post.author] %}
@@ -25,7 +31,7 @@ layout: default
     </ul>
   </div>
   <div>
-    <h4>Projects</h4>
+    <h3>Projects</h3>
     <ul class="articles-list">
       {% for post in site.posts %}
       {% assign author = site.data.author[post.author] %}
