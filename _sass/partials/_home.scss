@@ -1,5 +1,5 @@
 li.article-preview {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-bottom: 0.05em solid $light-gray;
   p {
     padding-bottom: 0;
@@ -11,7 +11,6 @@ li.article-preview {
 }
 
 .article-title {
-  padding-bottom: 0.5rem;
   a {
     text-decoration: none;
     border-bottom: 0.1em solid $blue;
@@ -20,9 +19,4 @@ li.article-preview {
     color: $blue;
     border: none;
   }
-}
-
-.published-date {
-  line-height: 1rem;
-  font-style: italic;
 }

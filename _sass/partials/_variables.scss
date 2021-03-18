@@ -1,8 +1,9 @@
 // Color palette
-$black: #222;
+$font-primary: #222;
+$font-secondary: #222;
 $white: #FDFDFD;
-$dark-gray: #555;
-$dark-grey: #555;
+$font-secondary: #555;
+$dark-grey: $font-secondary;
 $light-gray: rgb(230,230,230);
 $light-grey: rgb(230,230,230);
 $light-light-gray: rgb(243,243,243);

@@ -7,40 +7,19 @@ layout: default
     I'm Josh. I build software, make art, and read lots of sci-fi. Welcome to my little corner of the internet 👋
   </p>
   <p style="margin-bottom: 0.5rem">
-    If you want to get in touch with me you can find me on <a href="https://www.twitter.com/joshteperman" target="_blank">The Twitter</a> or judge my green squares on <a href="https://www.github.com/joshteperman" target="_blank">The GitHub</a>.
+    If you want to get in touch with me you can find me on <a href="https://www.twitter.com/joshteperman" target="_blank">Twitter</a> or judge my green tiles on <a href="https://www.github.com/joshteperman" target="_blank">GitHub</a>.
   </p>
-  <a href="/now">Learn more about me &rarr;</a>
+  <a href="/now">Learn more about me</a> &rarr;
 </section>
 <section class="page-content" style="display: flex">
   <div>
-    <h3>Writing</h3>
-    <p>
-      Writing is how I find connections between ideas and clarify my thoughts.</p>
-    </p>
+    <h4>Writing</h4>
     <ul class="articles-list">
       {% for post in site.posts %}
-      {% assign author = site.data.author[post.author] %}
-      <li class="article-preview">
-        <h6 class="article-title"><a href="{{ post.url }}">{{ post.title | upcase }}</a></h6>
-        <time class="published-date" datetime="{{ post.date }}">
-          <small>{{ post.date | date_to_string }}</small>
-        </time>
-        <p>{{ post.excerpt | strip_newlines | truncate: 80 }}</p>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div>
-    <h3>Projects</h3>
-    <ul class="articles-list">
-      {% for post in site.posts %}
-      {% assign author = site.data.author[post.author] %}
-      <li class="article-preview">
-        <h5 class="article-title"><a href="{{ post.url }}">{{ post.title | upcase }}</a></h5>
-        <time class="published-date" datetime="{{ post.date }}">
-          <small>{{ post.date | date_to_string }}</small>
-        </time>
-        {{ post.excerpt | strip_newlines | truncate: 80 }}
+      <li class="article-preview" >
+        <h6 class="article-title"><a href="{{ post.url }}">{{ post.title }}</a></h6>
+        <small class="subtitle1">{{ post.date | date_to_string }}</small>
+        {{ post.excerpt | strip_newlines | truncate: 100 }}
       </li>
       {% endfor %}
     </ul>

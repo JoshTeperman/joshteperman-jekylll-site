@@ -3,3 +3,9 @@ layout: default
 ---
 {{ content }}
 
+<div style="margin-bottom: 1.5rem">
+  <h5>Filter posts:</h5>
+  {% for tag in site.tags %}
+  <span style="padding: 4px 8px; background: rgba(255, 228, 75, 0.5); width: 100%; cursor: pointer">{{tag[0]}}</span>
+  {% endfor %}
+</div>

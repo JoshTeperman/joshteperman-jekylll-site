@@ -86,7 +86,7 @@ input,
 textarea {
 	border: 0.05em solid $light-gray;
 	&:focus {
-		border: 0.05em solid $black;
+		border: 0.05em solid $font-primary;
 	}
 }
 
