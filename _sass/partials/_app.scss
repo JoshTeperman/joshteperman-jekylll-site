@@ -42,9 +42,9 @@ main {
 // float, inline-block, table properties are already ignored by CSS Grid
 @supports (display: grid) {
   main {
-    width: auto;
-    min-width: 600px;
-    max-width: none;
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
   }
 }
 
