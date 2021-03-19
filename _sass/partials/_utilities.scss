@@ -73,11 +73,11 @@ code {
 }
 
 ::selection {
-  background-color: $yellow;
+  background-color: hsla(51, 100%, 64.7%, 0.5);
 }
 
 .highlighted {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFE44B 50%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, hsla(51, 100%, 64.7%, 1) 50%);
   border: none;
   text-decoration: none;
 }
