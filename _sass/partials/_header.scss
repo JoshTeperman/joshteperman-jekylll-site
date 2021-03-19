@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  max-width: 52rem;
+  max-width: 44rem;
   grid-column: full;
   display: grid;
   margin: 2rem auto 2rem;
@@ -21,6 +21,7 @@ header {
     color: $font-primary;
     text-decoration: none;
     padding-bottom: 0;
+    font-weight: 500;
   }
 
   @media screen and (min-width: $screen-sm-min) {

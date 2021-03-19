@@ -1,0 +1,25 @@
+current_projects:
+  - name: Undo
+    url: https://github.com/JoshTeperman/undo
+    description: Health & fitness tracker. Manage and record workouts, track health stats, data visualisation.
+  - name: This website
+    url: ''
+    description: 'My little corner of the internet. Static website built with Jekyll.'
+
+other_projects:
+  - name: Gradient Generator
+    description: 'Generate linear-gradients with the click of a button.'
+    github: https://github.com/JoshTeperman/gradient-generator
+    url: https://css-gradient-maker.netlify.app/
+  - name: Termino Visual
+    description: "Render scatterplots in the command line from (x, y) coordinates using Ruby's Curses module."
+    github: https://github.com/JoshTeperman/gradient-generator
+    url: ''
+  - name: hiro
+    description: 'A Terminal-based RPG game built in Ruby.'
+    github: https://github.com/JoshTeperman/hiro/
+    url: ''
+  - name: Zendesk ticketing clone
+    url: https://github.com/JoshTeperman/zendesk-app
+    description: 'An Express.js API to fetch tickets and display them in a dashboard built with React.js.'
+

@@ -1,44 +1,27 @@
 ---
 layout: default
 ---
+{% assign current_projects = site.data.projects['current_projects'] %}
+{% assign other_projects = site.data.projects['other_projects'] %}
 
 {{ content }}
 
-<h5>Things I'm making...</h5>
+<h5>Things I'm currently working on</h5>
 <ul>
-  <li>
-    <a class="highlighted"g href="#" target="_blank">This website</a><br>
-    My little corner of the internet. Static website built with Jekyll.
-  </li>
-  <li>
-    <a class="highlighted"g href="https://github.com/JoshTeperman/hiro/" target="_blank">Hiro</a><br>
-    A Diablo-style RPG game built as a Ruby gem. Totally geeking out on this one.
-  </li>
-  <li>
-    <a class="highlighted" style="border: none" href="https://github.com/JoshTeperman/juku" target="_blank">juku</a><br>
-    Tool for engineering bootcamp students to find and share coding challenges and their solutions. Building in Ruby on Rails with a RESTful API and <a href="https://github.com/collectiveidea/interactor">interactor</a> service objects.
-  </li>
-  <li>
-    <a class="highlighted" style="border: none" href="https://github.com/JoshTeperman/codely" target="_blank">Codely</a><br>
-    A <a href="https://www.codewars.com/">Codewars</a> sort-of-clone built with a Rails API, a GraphQL & Apollo client and React.js frontend. Started building this to learn my work tech-stack but recently switched to a Rails-only version with juku.
-  </li>
+  {% for project in current_projects %}
+    <li>
+      <a class="highlighted" style="font-weight: bold;" href="{{ project.url }}" target="_blank">{{ project.name }}</a>:
+      {{ project.description }}
+    </li>
+  {% endfor %}
 </ul>
-<h5>Things I made...</h5>
+
+<h5>Other projects</h5>
 <ul>
-  <li>
-    <a class="highlighted"g href="https://www.josht.dev/" target="_blank">josht.dev</a><br>
-    My first ever website. Built after learning HTML and CSS in 2019 during a coding Bootcamp.
-  </li>
-  <li>
-    <a class="highlighted"g href="https://blissful-turing-52f2d5.netlify.com/" target="_blank">Gradient Generator</a><br>
-    Generate linear-gradients with the click of a button. <a href="https://github.com/JoshTeperman/gradient-generator">(Repo)</a>
-  </li>
-  <li>
-    <a class="highlighted" style="border: none" href="https://github.com/JoshTeperman/Termino-visual" target="_blank">Termino Visual</a><br>
-    Render scatterplots in the command line from (x, y) coordinates using Ruby's <a>Curses</a> module.
-  </li>
-  <li>
-    <a class="highlighted" style="border: none" href="https://github.com/JoshTeperman/zendesk-app" target="_blank">Zendesk Ticketing Clone</a><br>
-    An Express.js API to fetch tickets and display them in a dashboard built with React.js.
-  </li>
+  {% for project in other_projects %}
+    <li>
+      <a class="highlighted" style="font-weight: bold;" href="{{ project.url }}" target="_blank">{{ project.name }}</a>:
+      {{ project.description }}
+    </li>
+  {% endfor %}
 </ul>
