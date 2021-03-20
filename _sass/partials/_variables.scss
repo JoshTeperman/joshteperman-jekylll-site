@@ -9,10 +9,14 @@ $light-grey: rgb(230,230,230);
 $light-light-gray: rgb(243,243,243);
 $light-light-grey: rgb(243,243,243);
 
-$blue: #238FEA;
-$yellow: #FFE44B;
-$red: #FA3434;
-$green: #2AB993;
+$blue-primary: hsla(207, 83%, 53%, 1);
+$blue-secondary: hsla(207, 83%, 53%, 0.5);
+$yellow-primary: hsla(51, 100%, 64.7%, 1);
+$yellow-secondary: hsla(51, 100%, 64.7%, 0.5);
+$green-primary: hsla(164, 63%, 45%, 1);
+$green-secondary: hsla(164, 63%, 45%, 0.5);
+
+$error-primary: #FA3434;
 
 // typographic defaults
 $base-font: 'Hind Madurai', sans-serif;

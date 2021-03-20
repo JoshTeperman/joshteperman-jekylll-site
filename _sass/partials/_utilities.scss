@@ -77,7 +77,7 @@ code {
 }
 
 .highlighted {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, hsla(51, 100%, 64.7%, 1) 50%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, $yellow-primary 50%);
   border: none;
   text-decoration: none;
 }
@@ -97,5 +97,5 @@ textarea {
 }
 
 button {
-	@include button($blue, $white);
+	@include button($blue-primary, $white);
 }

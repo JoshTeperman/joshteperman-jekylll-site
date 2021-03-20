@@ -1,22 +1,9 @@
-li.article-preview {
-  margin-bottom: 1rem;
-  border-bottom: 0.05em solid $light-gray;
-  p {
-    padding-bottom: 0;
-  }
+.inline-link {
+  text-decoration: none;
+  border-bottom: 0.1em solid $blue-primary;
 
-  &:last-child {
-    margin-bottom: 3rem;
-  }
-}
-
-.article-title {
-  a {
-    text-decoration: none;
-    border-bottom: 0.1em solid $blue;
-  }
-  a:hover {
-    color: $blue;
+  &:hover {
+    color: $blue-primary;
     border: none;
   }
 }

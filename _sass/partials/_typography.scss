@@ -94,8 +94,8 @@ strong {
 
 a,
 a:visited {
-	text-decoration: underline 1.5px $blue;
   color: $font-primary;
+  text-decoration: none;
 }
 
 a:hover,
