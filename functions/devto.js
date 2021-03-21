@@ -42,7 +42,7 @@ const handler = async function () {
   // }
   // Step 3: POST post data to dev.to
   // Step 4: if result.ok then update file published date
-  return { statusCode: 200, body: JSON.stringify({message: 'test function'}) }
+  // return { statusCode: 200, body: JSON.stringify({message: 'test function'}) }
 
   try {
     const fileData = await fs.readFileSync('_posts/its-always-your-fault.md', 'utf-8', (err, data) => {
