@@ -1,8 +1,9 @@
-
-const axios = require('axios');
+const fetch = require('node-fetch');
+const fs = require('fs');
+const fm = require('front-matter');
 
 const apiBaseUri = 'https://dev.to/api';
-const createPostPath = `${apiBaseUri}/articles'}`;
+const createPostPath = `${apiBaseUri}/articles}`;
 
 // POST /articles
 //
@@ -26,36 +27,59 @@ const createPostPath = `${apiBaseUri}/articles'}`;
 //   }
 // }
 
-exports.handler = async (event, context, callback) => {
-  // Step 1: Check if there are any unbublished posts (that have not been posted to Dev.to)
-  // Step 2: Prepare post data
+const handler = async function () {
+  // Step 1: Map through _posts and return fileData if unpublished ("published" attr is null)
+  // Step 2: Map post data For each of the unpublished posts ...
+  // {
+  //   fileData,
+  //   frontmatter,
+  //   attributes,
+  //   body,
+  //   title,
+  //   published,
+  //   body_markdown,
+  //   tags
+  // }
   // Step 3: POST post data to dev.to
+  // Step 4: if result.ok then update file published date
+  return { statusCode: 200, body: JSON.stringify({message: 'test function'}) }
 
-  const postParams = {
-    article: {
-      title: 'Hello World!',
-      published: true,
-      body_markdown: 'HELLO DEV. Posting using a Netflify serverless function!',
-      tags: ['netflify', 'serverless']
-    }
-  }
-  const headers = { "api-key": process.env.DEVTO }
-
-  result = await axios.post(createPostPath, {...postParams, ...headers })
-
-  if (result.success) {
-    console.log(result.data)
-    return {
-      status: result.status,
-      body: JSON.stringify(result.data)
-    }
-  } else {
-    return({
-      status: result.status,
-      error: result.error
+  try {
+    const fileData = await fs.readFileSync('_posts/its-always-your-fault.md', 'utf-8', (err, data) => {
+      return JS0N.stringify(data);
     })
+
+    const { attributes, body, frontmatter } = fm(fileData)
+
+    const articleParams = JSON.stringify(
+      {
+        article: {
+          title: attributes.title,
+          published: false,
+          body_markdown: body,
+          tags: [attributes.tags]
+        }
+      }
+    )
+
+    const response = await fetch(createPostPath, {
+      method:'post',
+      body: articleParams,
+      headers: { 'api-key': process.env.DEVTO, 'Content-Type': 'application/json' }
+    })
+
+    const json = await response.json()
+
+    console.log({json: json});
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({data: json})
+    }
+  } catch (e) {
+    console.log({error: e})
   }
 };
 
 
-
+module.exports = { handler }
