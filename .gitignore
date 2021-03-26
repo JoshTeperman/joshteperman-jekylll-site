@@ -2,6 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 .users.yml
+yarn-error.log
 
 # Local Netlify folder
 .netlify
