@@ -16,13 +16,17 @@ layout: default
     <h4>Recent posts</h4>
     <ul>
       {% for post in site.posts %}
-        <li style="margin-bottom: 1rem;">
-          <a href="{{ post.url }}">
-            <h6 class="highlighted" style="font-weight: bold; width: max-content;">{{ post.title }}</h6>
-          </a>
-          <small class="subtitle1">{{ post.date | date_to_string }}</small>
-          {{ post.excerpt | strip_newlines | truncate: 100 }}
-        </li>
+        {% if post.draft %}
+          {% continue %}
+        {% else %}
+          <li style="margin-bottom: 1rem;">
+            <a href="{{ post.url }}">
+              <h6 class="highlighted" style="font-weight: bold; width: max-content;">{{ post.title }}</h6>
+            </a>
+            <small class="subtitle1">{{ post.date | date_to_string }}</small>
+            {{ post.excerpt | strip_newlines | truncate: 100 }}
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
