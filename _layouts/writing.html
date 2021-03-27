@@ -3,9 +3,23 @@ layout: default
 ---
 {{ content }}
 
-<div style="margin-bottom: 1.5rem">
-  <h5>Filter posts:</h5>
+<div style="margin-bottom: 2.5rem">
   {% for tag in site.tags %}
   <span style="padding: 4px 8px; background: rgba(255, 228, 75, 0.5); width: 100%; cursor: pointer">{{tag[0]}}</span>
   {% endfor %}
 </div>
+<ul>
+  {% for post in site.posts %}
+    {% if post.draft %}
+      {% continue %}
+    {% else %}
+      <li style="margin-bottom: 1rem;">
+        <a href="{{ post.url }}">
+          <h4 class="highlighted" style="font-weight: bold; width: max-content;">{{ post.title }}</h4>
+        </a>
+        <small class="subtitle1">{{ post.date | date_to_string }}</small>
+        {{ post.excerpt | strip_newlines | truncate: 400 }}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

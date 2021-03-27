@@ -7,30 +7,39 @@ layout: default
     I'm Josh. I build software, make art, and read lots of sci-fi. Welcome to my little corner of the internet 👋
   </p>
   <p style="margin-bottom: 0.5rem">
-    If you want to get in touch with me you can find me on <a href="https://www.twitter.com/joshteperman" target="_blank">Twitter</a> or judge my green tiles on <a href="https://www.github.com/joshteperman" target="_blank">GitHub</a>.
+    If you want to get in touch with me you can find me on <a class="inline-link" href="https://www.twitter.com/joshteperman" target="_blank">Twitter</a> or judge my green tiles on <a class="inline-link" href="https://www.github.com/joshteperman" target="_blank">GitHub</a>.
   </p>
-  <a href="/now" class="inline-link">Learn more about me &rarr;</a>
+  <a href="/now" class="inline-link" style="font-weight: bold;">Learn more about me &rarr;</a>
 </section>
 <section class="page-content" style="display: flex; flex-direction: column">
-  <div>
+  <div style="margin-bottom: 1rem;">
     <h4>Recent posts</h4>
     <ul>
       {% for post in site.posts %}
         {% if post.draft %}
           {% continue %}
         {% else %}
-          <li style="margin-bottom: 1rem;">
-            <a href="{{ post.url }}">
-              <h6 class="highlighted" style="font-weight: bold; width: max-content;">{{ post.title }}</h6>
-            </a>
-            <small class="subtitle1">{{ post.date | date_to_string }}</small>
-            {{ post.excerpt | strip_newlines | truncate: 100 }}
+        <a class="hover-contrast" style="display: block;" href="{{ post.url }}">
+          <li style="padding: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h6 class="highlighted" style="font-weight: bold; width: max-content; margin-bottom: 0.25rem; max-width: 80%;">
+                {{ post.title }}
+              </h6>
+              <div>{{ post.date | date_to_string }}</div>
+            </div>
+            <div style="margin-bottom: 0.5rem;">
+              {% for tag in post.tags %}
+                <span class="subtitle1 tag">{{tag}}</span>
+              {% endfor %}
+            </div>
+            {{ post.excerpt | strip_newlines | truncate: 100 | remove: '<p>' | remove: '</p>' }}
           </li>
+        </a>
         {% endif %}
       {% endfor %}
     </ul>
   </div>
-  <span><a href="/writing" class="inline-link">See all posts &rarr;</a> </span>
+  <div style="text-align: center; font-weight: bold;"><a href="/writing" class="inline-link">See all posts &rarr;</a> </div>
 </section>
 
 

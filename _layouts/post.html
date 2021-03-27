@@ -9,16 +9,16 @@ layout: default
 
 {{ content }}
 
-<nav aria-label="Adjacent Posts">
-  <ul>
+  <nav style="margin: 2rem 0;">
+  <ul style="display: flex;">
     {% if page.previous.url %}
-      <li>
-        <a href="{{page.previous.url}}" rel="prev">&larr; {{page.previous.title}}</a>
+      <li style="margin-right: auto;">
+        <a class="inline-link" href="{{page.previous.url}}" rel="prev">&larr; {{page.previous.title}}</a>
       </li>
     {% endif %}
     {% if page.next.url %}
-      <li>
-        <a href="{{page.next.url}}" rel="next">{{page.next.title}} &rarr;</a>
+      <li style="margin-left: auto;">
+        <a class="inline-link" href="{{page.next.url}}" rel="next">{{page.next.title}} &rarr;</a>
       </li>
     {% endif %}
   </ul>

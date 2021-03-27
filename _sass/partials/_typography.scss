@@ -79,7 +79,6 @@ h6 {
 
 .subtitle1 {
   font-size: 0.8rem;
-  color: $font-secondary;
 }
 
 code {
@@ -115,4 +114,8 @@ ul {
   &:not(:last-of-type) {
     padding-bottom: 1.5rem;
   }
+}
+
+.text-secondary {
+  color: $font-secondary;
 }

@@ -5,7 +5,7 @@ author: Josh Teperman
 published: "2018-4-27"
 intro_paragraph: ''
 draft: false
-tags: ruby, rails
+tags: ruby rails
 ---
 Rear-ended the car in front of you? Your fault.
 

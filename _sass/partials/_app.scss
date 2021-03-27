@@ -47,18 +47,3 @@ main {
     margin: 0 auto;
   }
 }
-
-// adjacent blog posts links
-nav[aria-label="Adjacent Posts"] {
-  margin: 2rem 0;
-  ul {
-    display: flex;
-    li {
-      flex: 0 0 50%;
-      width: auto;
-      &:nth-child(2) {
-        text-align: right;
-      }
-    }
-  }
-}

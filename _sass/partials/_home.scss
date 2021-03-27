@@ -7,3 +7,19 @@
     border: none;
   }
 }
+
+.tag {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+.hover-contrast {
+  &:hover {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    background-color: $light-light-gray;
+    color: inherit;
+  }
+}

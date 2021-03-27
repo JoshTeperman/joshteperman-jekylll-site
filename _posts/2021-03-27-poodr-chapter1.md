@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Chapter 1 Summary: Practical Object Oriented Design by Sandi Metz"
+title: "Notes on POODR Chapter 1"
 author: Josh Teperman
 published: ""
 intro_paragraph: ''
-draft: true
-tags: ruby, OOP
+draft: false
+tags: ruby OOP
 site_tags: Book Summary, Sandi Metz
 ---
 something something
