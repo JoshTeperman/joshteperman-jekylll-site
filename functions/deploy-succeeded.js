@@ -7,6 +7,11 @@ const createPostPath = `${apiBaseUri}/articles`;
 
 const handler = async function () {
   try {
+    // inspect _posts/posts.json
+    // if post.published == true, && post.exo09i.;/lternal_id == undefined
+    // read fileData
+    // publish post
+    // update _posts/posts.json with external_id
     const fileData = fs.readFileSync('_posts/2018-04-27-its-always-your-fault.md', 'utf-8', (err, data) => {
       return JS0N.stringify(data);
     })

@@ -1,5 +1,5 @@
 [build]
-  command = "jekyll build"
+  command = "node ./scripts/map-posts.js && jekyll build"
   publish = "_site"
   functions = "functions"
 
